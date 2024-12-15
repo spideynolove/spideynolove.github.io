@@ -1,0 +1,107 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "Python Data Analysis Tool",
+      "description": "A comprehensive tool for analyzing and visualizing large datasets using Python, designed to simplify the process of data analysis.",
+      "image": "https://picsum.photos/600/400?random=1",
+      "url": "/projects/data-analysis-tool/",
+      "github": "https://github.com/spideynolove/data-analysis-tool",
+      "demo": "https://data-analysis-tool-demo.herokuapp.com",
+      "technologies": ["Python", "Pandas", "Matplotlib", "Jupyter"],
+      "category": "Data Science"
+    },
+    {
+      "id": 2,
+      "title": "Web Scraping Framework",
+      "description": "A flexible and efficient web scraping framework built with Python, designed to make web data extraction simple and maintainable.",
+      "image": "https://picsum.photos/600/400?random=2",
+      "url": "/projects/web-scraping-framework/",
+      "github": "https://github.com/spideynolove/web-scraping-framework",
+      "demo": "https://web-scraping-framework-docs.netlify.app",
+      "technologies": ["Python", "Beautiful Soup", "Requests", "SQLite"],
+      "category": "Web Development"
+    },
+    {
+      "id": 3,
+      "title": "Machine Learning Pipeline",
+      "description": "An end-to-end machine learning pipeline for data preprocessing, model training, and evaluation.",
+      "image": "https://picsum.photos/600/400?random=3",
+      "url": "#",
+      "github": "https://github.com/spideynolove/ml-pipeline",
+      "demo": "https://ml-pipeline-demo.herokuapp.com",
+      "technologies": ["Python", "scikit-learn", "TensorFlow", "Docker"],
+      "category": "Machine Learning"
+    },
+    {
+      "id": 4,
+      "title": "Task Management API",
+      "description": "A RESTful API for task management built with FastAPI, featuring authentication and task scheduling.",
+      "image": "https://picsum.photos/600/400?random=4",
+      "url": "#",
+      "github": "https://github.com/spideynolove/task-api",
+      "demo": "https://task-api-demo.herokuapp.com",
+      "technologies": ["Python", "FastAPI", "PostgreSQL", "Docker"],
+      "category": "Backend"
+    },
+    {
+      "id": 5,
+      "title": "Portfolio Generator",
+      "description": "A static site generator specifically designed for creating developer portfolios.",
+      "image": "https://picsum.photos/600/400?random=5",
+      "url": "#",
+      "github": "https://github.com/spideynolove/portfolio-gen",
+      "demo": "https://portfolio-gen-demo.netlify.app",
+      "technologies": ["Python", "Jinja2", "Markdown", "YAML"],
+      "category": "Tools"
+    },
+    {
+      "id": 6,
+      "title": "Python Package Template",
+      "description": "A modern template for Python packages with best practices and CI/CD setup.",
+      "image": "https://picsum.photos/600/400?random=6",
+      "url": "#",
+      "github": "https://github.com/spideynolove/python-package-template",
+      "demo": "https://python-package-template.readthedocs.io",
+      "technologies": ["Python", "Poetry", "pytest", "GitHub Actions"],
+      "category": "Tools"
+    },
+    {
+      "id": 7,
+      "title": "Database Migration Tool",
+      "description": "A tool for managing database schema migrations across different environments.",
+      "image": "https://picsum.photos/600/400?random=7",
+      "url": "#",
+      "github": "https://github.com/spideynolove/db-migrator",
+      "demo": "https://db-migrator-docs.netlify.app",
+      "technologies": ["Python", "SQLAlchemy", "Alembic", "Click"],
+      "category": "Tools"
+    },
+    {
+      "id": 8,
+      "title": "API Documentation Generator",
+      "description": "Automatically generate beautiful API documentation from OpenAPI specifications.",
+      "image": "https://picsum.photos/600/400?random=8",
+      "url": "#",
+      "github": "https://github.com/spideynolove/api-docs-gen",
+      "demo": "https://api-docs-gen-demo.netlify.app",
+      "technologies": ["Python", "OpenAPI", "Swagger", "Markdown"],
+      "category": "Tools"
+    },
+    {
+      "id": 9,
+      "title": "Code Quality Checker",
+      "description": "A tool that combines multiple Python code quality checkers into one interface.",
+      "image": "https://picsum.photos/600/400?random=9",
+      "url": "#",
+      "github": "https://github.com/spideynolove/code-quality",
+      "demo": "https://code-quality-demo.herokuapp.com",
+      "technologies": ["Python", "pylint", "black", "mypy"],
+      "category": "Tools"
+    }
+  ],
+  "pagination": {
+    "projectsPerPage": 6,
+    "totalProjects": 9
+  }
+}

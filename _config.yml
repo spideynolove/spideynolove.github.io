@@ -1,3 +1,10 @@
-theme: jekyll-theme-minimal
-title: Spidey's homepage
-description: Bookmark this to keep an eye on my project updates!
+title: spideynolove.github.io
+baseurl: ""
+url: "https://spideynolove.github.io"
+collections:
+  posts:
+    output: true
+    permalink: /blog/:year/:title/
+  projects:
+    output: true
+    permalink: /projects/:path/

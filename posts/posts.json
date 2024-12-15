@@ -1,0 +1,116 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "date": "2024-01-20",
+      "title": "Python Best Practices: Writing Clean and Efficient Code",
+      "excerpt": "Learn essential Python best practices for writing maintainable and efficient code. Covers list comprehensions, context managers, type hints, and more.",
+      "image": "https://picsum.photos/600/400?random=1",
+      "url": "/posts/2024-01-20-coding-tutorial/",
+      "tags": ["Python", "Tutorial"]
+    },
+    {
+      "id": 2,
+      "date": "2024-01-15",
+      "title": "Welcome to My Developer Blog",
+      "excerpt": "Introduction to my blog where I'll share technical tutorials, project updates, and programming insights.",
+      "image": "https://picsum.photos/600/400?random=2",
+      "url": "/posts/2024-01-15-first-blog-post/",
+      "tags": ["Introduction", "General"]
+    },
+    {
+      "id": 3,
+      "date": "2024-01-25",
+      "title": "Getting Started with Data Analysis in Python",
+      "excerpt": "A comprehensive guide to data analysis using Python, Pandas, and Matplotlib. Learn how to clean, analyze, and visualize data.",
+      "image": "https://picsum.photos/600/400?random=3",
+      "url": "#",
+      "tags": ["Python", "Data Analysis"]
+    },
+    {
+      "id": 4,
+      "date": "2024-02-01",
+      "title": "Web Scraping with Python and Beautiful Soup",
+      "excerpt": "Learn how to extract data from websites using Python and Beautiful Soup. Includes practical examples and best practices.",
+      "image": "https://picsum.photos/600/400?random=4",
+      "url": "#",
+      "tags": ["Python", "Web Scraping"]
+    },
+    {
+      "id": 5,
+      "date": "2024-02-05",
+      "title": "Building RESTful APIs with FastAPI",
+      "excerpt": "A step-by-step guide to building modern, fast, and type-safe APIs using FastAPI and Python.",
+      "image": "https://picsum.photos/600/400?random=5",
+      "url": "#",
+      "tags": ["Python", "API", "FastAPI"]
+    },
+    {
+      "id": 6,
+      "date": "2024-02-10",
+      "title": "Introduction to Machine Learning with Python",
+      "excerpt": "Get started with machine learning using Python and scikit-learn. Learn about classification, regression, and model evaluation.",
+      "image": "https://picsum.photos/600/400?random=6",
+      "url": "#",
+      "tags": ["Python", "Machine Learning"]
+    },
+    {
+      "id": 7,
+      "title": "Advanced Python Decorators",
+      "date": "2024-02-15",
+      "excerpt": "Deep dive into Python decorators. Learn how to write and use decorators effectively in your code.",
+      "image": "https://picsum.photos/600/400?random=7",
+      "url": "#",
+      "tags": ["Python", "Advanced"]
+    },
+    {
+      "id": 8,
+      "title": "Python Design Patterns",
+      "date": "2024-02-20",
+      "excerpt": "Explore common design patterns and their implementation in Python. Includes practical examples.",
+      "image": "https://picsum.photos/600/400?random=8",
+      "url": "#",
+      "tags": ["Python", "Design Patterns"]
+    },
+    {
+      "id": 9,
+      "title": "Testing in Python with pytest",
+      "date": "2024-02-25",
+      "excerpt": "Learn how to write effective tests using pytest. Covers fixtures, parametrization, and more.",
+      "image": "https://picsum.photos/600/400?random=9",
+      "url": "#",
+      "tags": ["Python", "Testing"]
+    },
+    {
+      "id": 10,
+      "title": "Python Concurrency with asyncio",
+      "date": "2024-03-01",
+      "excerpt": "Understanding asynchronous programming in Python using asyncio. Includes real-world examples.",
+      "image": "https://picsum.photos/600/400?random=10",
+      "url": "#",
+      "tags": ["Python", "Async"]
+    },
+    {
+      "id": 11,
+      "title": "Building CLI Applications with Click",
+      "date": "2024-03-05",
+      "excerpt": "Create powerful command-line interfaces using Python and Click framework.",
+      "image": "https://picsum.photos/600/400?random=11",
+      "url": "#",
+      "tags": ["Python", "CLI"]
+    },
+    {
+      "id": 12,
+      "title": "Python Memory Management",
+      "date": "2024-03-10",
+      "excerpt": "Understanding how Python manages memory and how to optimize memory usage in your applications.",
+      "image": "https://picsum.photos/600/400?random=12",
+      "url": "#",
+      "tags": ["Python", "Performance"]
+    }
+  ],
+  "pagination": {
+    "postsPerPage": 6,
+    "totalPosts": 12
+  }
+}

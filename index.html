@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpideyNoLove - Python Developer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        header {
+            background: #2c3e50;
+            color: white;
+            padding: 1rem;
+        }
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+        }
+        .hero {
+            background: #3498db;
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .section {
+            margin: 2rem 0;
+        }
+        .section h2 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+        .posts, .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        .card {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .card h3 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+        .btn {
+            display: inline-block;
+            background: #3498db;
+            color: white;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-top: 1rem;
+        }
+        .btn:hover {
+            background: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>spideynolove</h1>
+            <div>
+                <a href="/">Home</a>
+                <a href="/posts">Blog</a>
+                <a href="/projects">Projects</a>
+                <a href="/about">About</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Python Developer & Technical Writer</h1>
+        <p>Exploring software development through code and tutorials</p>
+    </section>
+
+    <main class="container">
+        <section class="section">
+            <h2>Latest Posts</h2>
+            <div class="posts">
+                <div class="card">
+                    <h3>Python Best Practices: Writing Clean and Efficient Code</h3>
+                    <p>Learn essential Python best practices for writing maintainable and efficient code...</p>
+                    <a href="/posts/2024-01-20-coding-tutorial/" class="btn">Read More</a>
+                </div>
+                <div class="card">
+                    <h3>Welcome to My Developer Blog</h3>
+                    <p>Introduction to my blog where I'll share technical tutorials, project updates, and programming insights...</p>
+                    <a href="/posts/2024-01-15-first-blog-post/" class="btn">Read More</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Featured Projects</h2>
+            <div class="projects">
+                <div class="card">
+                    <h3>Python Data Analysis Tool</h3>
+                    <p>A tool for analyzing and visualizing large datasets using Python and Pandas...</p>
+                    <a href="/projects/data-analysis-tool/" class="btn">View Project</a>
+                </div>
+                <div class="card">
+                    <h3>Web Scraping Framework</h3>
+                    <p>A flexible framework for web scraping built with Python and Beautiful Soup...</p>
+                    <a href="/projects/web-scraping-framework/" class="btn">View Project</a>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,29 @@
+{
+  "views": {
+    "grid-9": {
+      "columns": 3,
+      "postsPerPage": 9,
+      "name": "Grid-9"
+    },
+    "grid-4": {
+      "columns": 2,
+      "postsPerPage": 4,
+      "name": "Grid-4"
+    },
+    "list-view": {
+      "columns": 1,
+      "postsPerPage": 6,
+      "name": "List View"
+    }
+  },
+  "categories": [
+    "Python",
+    "Tutorial",
+    "Data Analysis",
+    "Web Development",
+    "Machine Learning"
+  ],
+  "defaultView": "grid-9",
+  "defaultSort": "newest",
+  "searchEnabled": true
+}

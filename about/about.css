@@ -1,0 +1,133 @@
+/* About page specific styles */
+#about-hero {
+    text-align: center;
+    padding: 4rem 0;
+}
+
+.expertise-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.expertise-item {
+    height: 250px;
+    border-radius: 15px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.expertise-item:hover {
+    transform: translateY(-5px);
+}
+
+.expertise-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.expertise-content i {
+    font-size: 2.5em;
+    margin-bottom: 1rem;
+}
+
+.expertise-content h3 {
+    margin-bottom: 0.5rem;
+}
+
+.expertise-content p {
+    font-size: 0.9em;
+    opacity: 0.8;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.skill-icon {
+    font-size: 2.5em;
+    padding: 1.5rem;
+    background: var(--card-bg);
+    border-radius: 10px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    color: var(--text-color);
+}
+
+.skill-icon:hover {
+    transform: translateY(-5px);
+    background: var(--card-hover);
+}
+
+.focus-card {
+    background: var(--card-bg);
+    padding: 2rem;
+    border-radius: 15px;
+    margin-top: 1.5rem;
+    text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.focus-card:hover {
+    transform: translateY(-5px);
+    background: var(--card-hover);
+}
+
+.focus-card p {
+    font-size: 1.2rem;
+    color: var(--text-color);
+}
+
+/* Fade in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+section {
+    animation: fadeIn 0.8s ease forwards;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .expertise-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .skills-container {
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    }
+
+    .expertise-item {
+        height: 200px;
+    }
+
+    .skill-icon {
+        font-size: 2em;
+        padding: 1rem;
+    }
+}

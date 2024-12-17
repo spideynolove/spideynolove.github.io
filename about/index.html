@@ -1,53 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me - Spideynolove</title>
-    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="about.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-
-<body>
-    <div class="about-container">
-        <header>
-            <h1>About Me</h1>
-            <div class="profile-section">
-                <!-- <img src="../resources/ohara.gif" width="200" alt="Profile Animation" class="profile-image"> -->
-                <div class="social-links">
-                    <a href="https://twitter.com/spideynolove" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
-                    <a href="https://www.linkedin.com/in/hung-nguyen-61266321b" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/spideynolove" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+<body class="light-mode">
+    <nav>
+        <div class="nav-content">
+            <div class="nav-left">
+                <img src="../assets/avatar.png" alt="Profile" class="nav-avatar">
+                <div class="nav-links">
+                    <a href="/">Home</a>
+                    <a href="/about">About</a>
+                    <a href="/projects">Projects</a>
+                    <a href="/posts">Blog</a>
                 </div>
             </div>
-        </header>
+            <div class="nav-right">
+                <div class="theme-switch">
+                    <span>Light</span>
+                    <label class="switch">
+                        <input type="checkbox" id="theme-toggle">
+                        <span class="slider round"></span>
+                    </label>
+                    <span>Dark</span>
+                </div>
+                <button class="say-hello">Say Hello! 👋</button>
+            </div>
+        </div>
+    </nav>
 
-        <section class="intro">
-            <h2>Hello, I'm Hung! 👋</h2>
-            <p>Passionate developer crafting solutions in data science, web scraping, and AI...</p>
+    <div class="social-sidebar">
+        <a href="https://linkedin.com/in/hung-nguyen-61266321b" class="social-link linkedin">
+            <i class="fab fa-linkedin-in"></i>
+            <span>Linked In</span>
+        </a>
+        <a href="https://github.com/spideynolove" class="social-link github">
+            <i class="fab fa-github"></i>
+        </a>
+        <a href="https://reddit.com" class="social-link reddit">
+            <i class="fab fa-reddit-alien"></i>
+        </a>
+        <a href="https://instagram.com" class="social-link instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://twitter.com/spideynolove" class="social-link twitter">
+            <i class="fab fa-twitter"></i>
+        </a>
+        <div class="sidebar-line"></div>
+    </div>
+
+    <main>
+        <section id="about-hero">
+            <h1 class="section-title">Hello, I'm Hung! 👋</h1>
+            <p class="hero-subtitle">Passionate developer crafting solutions in data science, web scraping, and AI...</p>
         </section>
 
-        <section class="expertise">
+        <section id="expertise">
+            <h2 class="section-title"><span class="section-number">01.</span> Areas of Expertise</h2>
             <div class="expertise-grid">
-                <div class="expertise-item"
-                    style="background-image: url('https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=500')">
+                <div class="expertise-item" style="background-image: url('https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=500')">
                     <div class="expertise-content">
                         <i class="fas fa-spider"></i>
                         <h3>Web Scraping Specialist</h3>
                         <p>Building robust solutions with Scrapy and Playwright...</p>
                     </div>
                 </div>
-                <div class="expertise-item"
-                    style="background-image: url('https://images.unsplash.com/photo-1677442136019-21780ecad995?w=500')">
+                <div class="expertise-item" style="background-image: url('https://images.unsplash.com/photo-1677442136019-21780ecad995?w=500')">
                     <div class="expertise-content">
                         <i class="fas fa-brain"></i>
                         <h3>AI & Machine Learning</h3>
                         <p>Developing intelligent solutions with PyTorch and scikit-learn...</p>
                     </div>
                 </div>
-                <div class="expertise-item"
-                    style="background-image: url('https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?w=500')">
+                <div class="expertise-item" style="background-image: url('https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?w=500')">
                     <div class="expertise-content">
                         <i class="fab fa-docker"></i>
                         <h3>DevOps Engineering</h3>
@@ -57,8 +87,8 @@
             </div>
         </section>
 
-        <section class="skills">
-            <h2>Technical Toolkit</h2>
+        <section id="skills">
+            <h2 class="section-title"><span class="section-number">02.</span> Technical Toolkit</h2>
             <div class="skills-container">
                 <div class="skill-icon">
                     <i class="fab fa-python" title="Python"></i>
@@ -75,190 +105,20 @@
                 <div class="skill-icon">
                     <i class="fas fa-database" title="Databases"></i>
                 </div>
-                <!-- <div class="skill-icon">
-                    <i class="fab fa-aws" title="AWS"></i>
-                </div>
-                <div class="skill-icon">
-                    <i class="fab fa-kubernetes" title="Kubernetes"></i>
-                </div> -->
                 <div class="skill-icon">
                     <i class="fab fa-docker" title="Docker"></i>
                 </div>
             </div>
         </section>
 
-        <section class="current-focus">
-            <h2>Current Focus</h2>
-            <p>Developing an AI-powered Stock Advisor system...</p>
+        <section id="current-focus">
+            <h2 class="section-title"><span class="section-number">03.</span> Current Focus</h2>
+            <div class="focus-card">
+                <p>Developing an AI-powered Stock Advisor system...</p>
+            </div>
         </section>
-    </div>
+    </main>
 
-    <style>
-        body {
-            background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920');
-            background-size: cover;
-            background-attachment: fixed;
-            background-position: center;
-            color: #fff;
-            min-height: 100vh;
-        }
-
-        .about-container {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 2rem;
-            background: rgba(0, 0, 0, 0.7);
-            backdrop-filter: blur(10px);
-            border-radius: 15px;
-        }
-
-        header {
-            text-align: center;
-            margin-bottom: 3rem;
-        }
-
-        .profile-section {
-            margin: 2rem 0;
-        }
-
-        .profile-image {
-            border-radius: 10px;
-            margin-bottom: 1rem;
-        }
-
-        .social-links {
-            margin-top: 1rem;
-        }
-
-        .social-icon {
-            font-size: 2em;
-            margin: 0 15px;
-            color: #fff;
-            transition: transform 0.3s ease, color 0.3s ease;
-        }
-
-        .social-icon:hover {
-            transform: scale(1.2);
-        }
-
-        .fa-twitter:hover {
-            color: #1DA1F2;
-        }
-
-        .fa-linkedin:hover {
-            color: #0077B5;
-        }
-
-        .fa-github:hover {
-            color: #6e5494;
-        }
-
-        .intro {
-            margin-bottom: 3rem;
-            text-align: center;
-        }
-
-        .expertise-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin: 2rem 0;
-        }
-
-        .expertise-item {
-            height: 200px;
-            border-radius: 15px;
-            background-size: cover;
-            background-position: center;
-            position: relative;
-            overflow: hidden;
-            transition: transform 0.3s ease;
-        }
-
-        .expertise-item:hover {
-            transform: translateY(-5px);
-        }
-
-        .expertise-content {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(0, 0, 0, 0.7);
-            padding: 1.5rem;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-        }
-
-        .expertise-content i {
-            font-size: 2.5em;
-            margin-bottom: 1rem;
-        }
-
-        .expertise-content h3 {
-            margin-bottom: 0.5rem;
-            color: #fff;
-        }
-
-        .expertise-content p {
-            font-size: 0.9em;
-            opacity: 0.8;
-        }
-
-        .skills-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
-            gap: 1.5rem;
-            margin: 2rem 0;
-            text-align: center;
-        }
-
-        .skill-icon {
-            font-size: 2.5em;
-            padding: 1rem;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 10px;
-            transition: transform 0.3s ease, background-color 0.3s ease;
-        }
-
-        .skill-icon:hover {
-            transform: translateY(-5px);
-            background: rgba(255, 255, 255, 0.2);
-        }
-
-        .current-focus {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 2rem;
-            border-radius: 15px;
-            margin-top: 3rem;
-            text-align: center;
-        }
-
-        h1,
-        h2 {
-            color: #fff;
-        }
-
-        h2 {
-            margin-top: 2rem;
-            padding-bottom: 0.5rem;
-            border-bottom: 2px solid rgba(255, 255, 255, 0.2);
-        }
-
-        @media (max-width: 768px) {
-            .expertise-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .skills-container {
-                grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
-            }
-        }
-    </style>
+    <script src="../script.js"></script>
 </body>
-
 </html>

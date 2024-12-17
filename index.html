@@ -4,135 +4,113 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SpideyNoLove - Python Developer</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #333;
-        }
-        header {
-            background: #2c3e50;
-            color: white;
-            padding: 1rem;
-        }
-        nav {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            padding: 0.5rem 1rem;
-        }
-        .hero {
-            background: #3498db;
-            color: white;
-            padding: 4rem 2rem;
-            text-align: center;
-        }
-        .hero h1 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
-        .section {
-            margin: 2rem 0;
-        }
-        .section h2 {
-            color: #2c3e50;
-            margin-bottom: 1rem;
-        }
-        .posts, .projects {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-        }
-        .card {
-            background: #f8f9fa;
-            border-radius: 8px;
-            padding: 1.5rem;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-        .card h3 {
-            color: #2c3e50;
-            margin-bottom: 1rem;
-        }
-        .btn {
-            display: inline-block;
-            background: #3498db;
-            color: white;
-            padding: 0.5rem 1rem;
-            text-decoration: none;
-            border-radius: 4px;
-            margin-top: 1rem;
-        }
-        .btn:hover {
-            background: #2980b9;
-        }
-    </style>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-<body>
-    <header>
-        <nav>
-            <h1>spideynolove</h1>
-            <div>
-                <a href="/">Home</a>
-                <a href="/posts">Blog</a>
-                <a href="/projects">Projects</a>
-                <a href="/about">About</a>
+<body class="light-mode">
+    <nav>
+        <div class="nav-content">
+            <div class="nav-left">
+                <img src="./assets/avatar.png" alt="Profile" class="nav-avatar">
+                <div class="nav-links">
+                    <a href="./index.html">Home</a>
+                    <a href="./about/index.html">About</a>
+                    <a href="./projects/index.html">Projects</a>
+                    <a href="./posts/index.html">Blog</a>
+                </div>
             </div>
-        </nav>
-    </header>
+            <div class="nav-right">
+                <div class="theme-switch">
+                    <span>Light</span>
+                    <label class="switch">
+                        <input type="checkbox" id="theme-toggle">
+                        <span class="slider round"></span>
+                    </label>
+                    <span>Dark</span>
+                </div>
+                <button class="say-hello">Say Hello! 👋</button>
+            </div>
+        </div>
+    </nav>
 
-    <section class="hero">
-        <h1>Python Developer & Technical Writer</h1>
-        <p>Exploring software development through code and tutorials</p>
-    </section>
+    <div class="social-sidebar">
+        <a href="https://linkedin.com/in/hung-nguyen-61266321b" class="social-link linkedin">
+            <i class="fab fa-linkedin-in"></i>
+            <!-- <span>Linked In</span> -->
+        </a>
+        <a href="https://github.com/spideynolove" class="social-link github">
+            <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.reddit.com/user/Lumpy_Inflation_3959/" class="social-link reddit">
+            <i class="fab fa-reddit-alien"></i>
+        </a>
+        <a href="https://instagram.com" class="social-link instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://twitter.com/spideynolove" class="social-link twitter">
+            <i class="fab fa-twitter"></i>
+        </a>
+        <div class="sidebar-line"></div>
+    </div>
 
-    <main class="container">
-        <section class="section">
-            <h2>Latest Posts</h2>
-            <div class="posts">
+    <main>
+        <section id="hero">
+            <h1 class="section-title">Python Developer & Technical Writer</h1>
+            <p class="hero-subtitle">Exploring software development through code and tutorials</p>
+        </section>
+
+        <section id="latest-posts">
+            <h2 class="section-title"><span class="section-number">01.</span> Latest Posts</h2>
+            <div class="posts-grid">
                 <div class="card">
                     <h3>Python Best Practices: Writing Clean and Efficient Code</h3>
                     <p>Learn essential Python best practices for writing maintainable and efficient code...</p>
-                    <a href="/posts/2024-01-20-coding-tutorial/" class="btn">Read More</a>
+                    <a href="./posts/2024-01-20-coding-tutorial/index.html" class="card-link">Read More</a>
                 </div>
                 <div class="card">
                     <h3>Welcome to My Developer Blog</h3>
                     <p>Introduction to my blog where I'll share technical tutorials, project updates, and programming insights...</p>
-                    <a href="/posts/2024-01-15-first-blog-post/" class="btn">Read More</a>
+                    <a href="./posts/2024-01-15-first-blog-post/index.html" class="card-link">Read More</a>
                 </div>
             </div>
         </section>
 
-        <section class="section">
-            <h2>Featured Projects</h2>
-            <div class="projects">
-                <div class="card">
-                    <h3>Python Data Analysis Tool</h3>
-                    <p>A tool for analyzing and visualizing large datasets using Python and Pandas...</p>
-                    <a href="/projects/data-analysis-tool/" class="btn">View Project</a>
+        <section id="featured-projects">
+            <h2 class="section-title"><span class="section-number">02.</span> Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>Python Data Analysis Tool</h3>
+                        <p>A tool for analyzing and visualizing large datasets using Python and Pandas...</p>
+                        <div class="project-stats">
+                            <span class="lang">Python</span>
+                            <span class="stars">★ 42</span>
+                            <span class="forks">🔱 8</span>
+                        </div>
+                        <a href="./projects/data-analysis-tool/index.html" class="project-link">View Project</a>
+                    </div>
                 </div>
-                <div class="card">
-                    <h3>Web Scraping Framework</h3>
-                    <p>A flexible framework for web scraping built with Python and Beautiful Soup...</p>
-                    <a href="/projects/web-scraping-framework/" class="btn">View Project</a>
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>Web Scraping Framework</h3>
+                        <p>A flexible framework for web scraping built with Python and Beautiful Soup...</p>
+                        <div class="project-stats">
+                            <span class="lang">Python</span>
+                            <span class="stars">★ 35</span>
+                            <span class="forks">🔱 12</span>
+                        </div>
+                        <a href="./projects/web-scraping-framework/index.html" class="project-link">View Project</a>
+                    </div>
                 </div>
+            </div>
+            <div class="view-more">
+                <a href="https://github.com/spideynolove" class="github-link">
+                    View More on <i class="fab fa-github"></i>
+                </a>
             </div>
         </section>
     </main>
+
+    <script src="./script.js"></script>
 </body>
 </html>
